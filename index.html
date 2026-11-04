@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="dark">
+
+  <!-- ===== SEO (ganti NAMA.vercel.app dengan alamat situs lu setelah deploy) ===== -->
+  <title>Helfan Novilando Hutagaol – Frontend Developer</title>
+  <meta name="description" content="Portofolio Helfan Novilando Hutagaol, frontend developer lulusan SMK Taruna Bangsa. Lihat proyek, sertifikat, dan kontak.">
+  <link rel="canonical" href="https://NAMA.vercel.app/">
+  <meta property="og:title" content="Helfan Novilando Hutagaol – Frontend Developer">
+  <meta property="og:description" content="Portofolio frontend developer.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://NAMA.vercel.app/">
+
+  <!-- Tempel kode verifikasi Google Search Console di sini nanti:
+       <meta name="google-site-verification" content="..."> -->
+
+  <!-- ===== Font & CSS ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&family=Space+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <nav>
+    <span class="logo">helfan.dev</span>
+    <ul>
+      <li><a href="#home" class="on">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- ================= HOME ================= -->
+  <section id="home">
+    <div class="w">
+      <div class="hero">
+
+        <!-- Teks kiri -->
+        <div>
+          <div class="tag">✦ AVAILABLE FOR WORK</div>
+          <h1>Frontend<span>Developer</span></h1>
+          <div class="role">Fresh Graduate <i></i></div>
+          <p class="desc">
+            Menciptakan website modern dengan tampilan clean, responsif, dan elegan.
+            Mengubah ide dan desain menjadi pengalaman digital yang menarik dan mudah digunakan.
+          </p>
+          <div class="pills">
+            <span>TypeScript</span>
+            <span>React.js</span>
+            <span>Tailwind</span>
+          </div>
+          <div class="hint">
+            ↓ explore my work below<br>
+            ↗ open to full-time &amp; freelance opportunities
+          </div>
+        </div>
+
+        <!-- Kartu ID menggantung (kanan) -->
+        <div class="lan">
+          <div class="sw" id="sw">
+            <div class="strap">ID CARD · ID CARD · ID CARD · ID CARD · ID CARD · ID CARD · ID CARD</div>
+            <div class="card">
+              <div class="foto-box">
+                <!-- FOTO KARTU: pakai file foto.jpg di folder yang sama -->
+                <img src="foto.jpg" alt="Foto Helfan Novilando Hutagaol" onerror="this.style.display='none'">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="scroll">SCROLL ↓</div>
+    </div>
+  </section>
+
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about">
+    <div class="w">
+      <div class="ab">
+
+        <div>
+          <div class="tag">ABOUT ME</div>
+          <h2>Helfan Novilando Hutagaol</h2>
+          <p>
+            Fresh Graduate SMK Taruna Bangsa lulusan 2024 dengan passion di bidang frontend
+            development dan UI modern. Berfokus pada pembuatan website clean, responsif, dan
+            visual yang kuat untuk menghadirkan pengalaman digital yang optimal.
+          </p>
+          <div class="q">“Turning ideas into clean, modern, and meaningful digital experiences.”</div>
+          <div class="btns">
+            <a class="b w1" href="#">⤓ Download CV</a>
+            <a class="b" href="#portfolio">↗ View Projects</a>
+          </div>
+        </div>
+
+        <!-- FOTO BULAT: pakai file foto.jpg yang sama -->
+        <div class="av foto-box">
+          <img src="foto.jpg" alt="Foto Helfan Novilando Hutagaol" onerror="this.style.display='none'">
+        </div>
+
+      </div>
+
+      <!-- Statistik -->
+      <div class="stats">
+        <div class="st"><div><span>&lt;/&gt;</span><span>3</span></div><small>PROJECTS</small></div>
+        <div class="st"><div><span>★</span><span>1</span></div><small>CERTIFICATES</small></div>
+        <div class="st"><div><span>◎</span><span>3</span></div><small>COMPLETED WORKS</small></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= PORTFOLIO ================= -->
+  <section id="portfolio" class="c">
+    <div class="w">
+      <h2>Portfolio Showcase</h2>
+      <p class="sub">Explore my journey through projects, certifications, and technical expertise.</p>
+
+      <div class="tabs" role="tablist">
+        <button class="on" data-t="p1">Projects</button>
+        <button data-t="p2">Certificates</button>
+        <button data-t="p3">Tech Stack</button>
+      </div>
+
+      <!-- Tab: Projects (salin satu blok .pc untuk tambah proyek) -->
+      <div class="pane on" id="p1">
+        <div class="grid">
+          <div class="pc">
+            <div class="th">Aplikasi Kasir</div>
+            <h3>Aplikasi Kasir Online</h3>
+            <p>Kasir untuk UMKM dengan laporan penjualan harian.</p>
+            <div class="f"><span>React · Node.js</span><a href="#">Details ↗</a></div>
+          </div>
+          <div class="pc">
+            <div class="th">Belajar Coding</div>
+            <h3>Platform Belajar Coding</h3>
+            <p>Latihan soal interaktif dengan penilaian otomatis.</p>
+            <div class="f"><span>Next.js · Postgres</span><a href="#">Details ↗</a></div>
+          </div>
+          <div class="pc">
+            <div class="th">Landing Page</div>
+            <h3>Landing Page Toko</h3>
+            <p>Halaman promosi responsif dengan animasi halus.</p>
+            <div class="f"><span>Tailwind · TS</span><a href="#">Details ↗</a></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab: Certificates -->
+      <div class="pane" id="p2">
+        <div class="grid">
+          <div class="pc">
+            <div class="th">Sertifikat</div>
+            <h3>Sertifikat PKL</h3>
+            <p>Praktik Kerja Lapangan, Nama Perusahaan.</p>
+            <div class="f"><span>2025</span><a href="#">Lihat ↗</a></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab: Tech Stack -->
+      <div class="pane" id="p3">
+        <div class="tech">
+          <div><b>TS</b>TypeScript</div>
+          <div><b>⚛</b>React</div>
+          <div><b>TW</b>Tailwind</div>
+          <div><b>5</b>HTML</div>
+          <div><b>3</b>CSS</div>
+          <div><b>JS</b>JavaScript</div>
+          <div><b>N</b>Node.js</div>
+          <div><b>G</b>Git</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="c">
+    <div class="w">
+      <h2>Get In Touch</h2>
+      <p class="sub">Have something in mind? Send a message and let’s connect.</p>
+
+      <div class="ct">
+
+        <!-- Form pesan -->
+        <div class="bx">
+          <h3>Hubungi Saya</h3>
+          <p>Feel free to reach out if you want to collaborate, discuss ideas, or simply say hello.</p>
+          <input id="n1" placeholder="Your Name" aria-label="Nama">
+          <input id="e1" type="email" placeholder="Your Email" aria-label="Email">
+          <textarea id="m1" rows="4" placeholder="Your Message" aria-label="Pesan"></textarea>
+          <button class="b" id="send">➤ Send Message</button>
+          <div class="msg" id="ok"></div>
+
+          <!-- Link sosial: ganti href="#" dengan link asli -->
+          <div class="soc">
+            <a href="#">LinkedIn</a>
+            <a href="#">Instagram</a>
+            <a href="#">YouTube</a>
+            <a href="#">GitHub</a>
+          </div>
+        </div>
+
+        <!-- Komentar -->
+        <div class="bx">
+          <h3>Comments</h3>
+          <p>Leave your thoughts here</p>
+          <input id="n2" placeholder="Your Name" aria-label="Nama">
+          <textarea id="c2" rows="4" placeholder="Your Comment" aria-label="Komentar"></textarea>
+          <button class="b" id="post">Post Comment</button>
+          <div class="cm" id="cm"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>© 2026 helfan.dev — all rights reserved</footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
